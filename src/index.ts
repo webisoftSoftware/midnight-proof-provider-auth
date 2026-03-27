@@ -32,7 +32,7 @@ import {
   createCheckPayload,
   parseCheckResult,
   CostModel,
-} from '@midnight-ntwrk/ledger-v7';
+} from '@midnight-ntwrk/ledger-v8';
 import {
   InvalidProtocolSchemeError,
   zkConfigToProvingKeyMaterial,
@@ -129,7 +129,7 @@ const makeHttpRequest = async (
 
   const response = await fetchRetry(url.toString(), {
     method: 'POST',
-    body: payload.buffer,
+    body: payload as unknown as BodyInit,
     headers: {
       'Content-Type': 'application/octet-stream',
       ...headers,

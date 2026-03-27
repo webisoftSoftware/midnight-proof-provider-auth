@@ -1,6 +1,6 @@
 {
   "name": "@midnight-ntwrk/http-client-proof-provider-auth",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Authenticated HTTP proof provider for Midnight — adds API key support for 3rd party proof servers like Proof Station",
   "type": "module",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
     "url": "https://github.com/webisoftSoftware/midnight-proof-provider-auth"
   },
   "peerDependencies": {
-    "@midnight-ntwrk/ledger-v7": ">=1.0.0",
+    "@midnight-ntwrk/ledger-v8": ">=1.0.0",
     "@midnight-ntwrk/midnight-js-types": ">=1.0.0"
   },
   "dependencies": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "typescript": "^5.6.0",
-    "@midnight-ntwrk/ledger-v7": "*",
+    "@midnight-ntwrk/ledger-v8": "*",
     "@midnight-ntwrk/midnight-js-types": "*"
   }
 }
